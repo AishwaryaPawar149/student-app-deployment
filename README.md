@@ -1,13 +1,13 @@
-# 🦑‍👨‍💻 Student App Deployment using Jenkins, Maven, and Tomcat
+#  Student App Deployment using Jenkins, Maven, and Tomcat
 
-## 📘 Project Overview
+##  Project Overview
 
 This project demonstrates a **CI/CD pipeline** built with **Jenkins** to automate the deployment of a **Java-based web application** onto a **Tomcat server** hosted on an **AWS EC2 instance**.
 The pipeline fetches code from **GitHub**, builds the WAR file using **Maven**, and deploys it automatically to the remote server.
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 * **AWS EC2** – Host Jenkins and Tomcat servers
 * **Jenkins** – Continuous Integration and Deployment tool
@@ -18,7 +18,7 @@ The pipeline fetches code from **GitHub**, builds the WAR file using **Maven**, 
 
 ---
 
-## 🚀 CI/CD Pipeline Workflow
+##  CI/CD Pipeline Workflow
 
 1. **Checkout Source Code:** Jenkins pulls the latest code from the GitHub repository.
 2. **Build WAR File:** Maven compiles the project and packages it into a `.war` file.
@@ -28,7 +28,7 @@ The pipeline fetches code from **GitHub**, builds the WAR file using **Maven**, 
 
 ---
 
-## 🧬 Jenkinsfile
+##  Jenkinsfile
 
 ```groovy
 pipeline {
@@ -74,7 +74,7 @@ pipeline {
 
     post {
         success {
-            echo "✅ App deployed successfully! Visit: http://${SERVER_IP}:8080/"
+            echo " App deployed successfully! Visit: http://${SERVER_IP}:8080/"
         }
     }
 }
@@ -82,7 +82,7 @@ pipeline {
 
 ---
 
-## 🌈 Infrastructure Architecture
+##  Infrastructure Architecture
 
 * **Jenkins EC2 Instance** → Builds and deploys code
 * **Tomcat EC2 Instance** → Hosts the deployed application
@@ -91,7 +91,7 @@ pipeline {
 
 ---
 
-## 🧠 Learning Outcome
+##  Learning Outcome
 
 * Gained experience with **CI/CD automation using Jenkins**
 * Learned **Maven build process** for Java applications
@@ -100,7 +100,7 @@ pipeline {
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Aishwarya Pawar**
 GitHub: [AishwaryaPawar149](https://github.com/AishwaryaPawar149)
